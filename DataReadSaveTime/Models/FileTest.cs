@@ -16,7 +16,7 @@ namespace DataReadSaveTime.Models
             {
                 try
                 {
-                    using (var fs = new FileStream(Path.Combine("data", "d" + n + ".json"), FileMode.Create, FileAccess.Write))
+                    using (var fs = new FileStream(Path.Combine(Program.DataDirectory, "d" + n + ".json"), FileMode.Create, FileAccess.Write))
                     using (var sr = new StreamWriter(fs))
                     {
                         string s = $"{{\"id\":\"{n}\",\"content\":\"{_content}\"}}";
@@ -36,7 +36,7 @@ namespace DataReadSaveTime.Models
             {
                 try
                 {
-                    using (var fs = new FileStream(Path.Combine("data", "d" + n + ".json"), FileMode.Open, FileAccess.Read))
+                    using (var fs = new FileStream(Path.Combine(Program.DataDirectory, "d" + n + ".json"), FileMode.Open, FileAccess.Read))
                     using (var sr = new StreamReader(fs))
                     {
                         string s = await sr.ReadToEndAsync();

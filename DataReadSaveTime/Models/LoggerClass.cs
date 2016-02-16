@@ -21,11 +21,11 @@ namespace DataReadSaveTime.Models
         */
         public static void NLogInfo(string message)
         {
-            using(var fs = new FileStream("data/log-" + DateTime.Now.ToString("yyyy-MM-dd") + ".log", FileMode.Append, FileAccess.Write))
+            using(var fs = new FileStream(Path.Combine(Program.DataDirectory,"log-" + DateTime.Now.ToString("yyyy-MM-dd") + ".log"), FileMode.Append, FileAccess.Write))
             using (var sr = new StreamWriter(fs))
             {
                 string s = $"{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")} {message}";
-                sr.Write(s);
+                sr.WriteLine(s);
             }
         }
 

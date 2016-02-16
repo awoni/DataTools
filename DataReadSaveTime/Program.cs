@@ -11,11 +11,13 @@ namespace DataReadSaveTime
 {
     public class Program
     {
+        public const string DataDirectory = "data";
 
         public static void Main(string[] args)
         {
-            if (!Directory.Exists("data"))
-                Directory.CreateDirectory("data");
+            if (!Directory.Exists(DataDirectory))
+                Directory.CreateDirectory(DataDirectory);
+            LoggerClass.NLogInfo("Directory.GetCurrentDirectory()");
             LoggerClass.NLogInfo("処理開始");
             var stopwatch = new Stopwatch();
             stopwatch.Start();
