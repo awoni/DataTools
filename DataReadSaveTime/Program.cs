@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 using DataReadSaveTime.Models;
 using System.Diagnostics;
+using System.IO;
 
 namespace DataReadSaveTime
 {
@@ -13,6 +14,8 @@ namespace DataReadSaveTime
 
         public static void Main(string[] args)
         {
+            if (!Directory.Exists("data"))
+                Directory.CreateDirectory("data");
             LoggerClass.NLogInfo("処理開始");
             var stopwatch = new Stopwatch();
             stopwatch.Start();
