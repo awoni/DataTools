@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TsvToSql", "TsvToSql\TsvToSql.xproj", "{CDE364A5-90E0-46AC-98E6-E3999AD29FBD}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DataReadSaveTime", "DataReadSaveTime\DataReadSaveTime.xproj", "{88BBA7E5-ED6E-4751-B62A-A42EAF256848}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CDE364A5-90E0-46AC-98E6-E3999AD29FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDE364A5-90E0-46AC-98E6-E3999AD29FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDE364A5-90E0-46AC-98E6-E3999AD29FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88BBA7E5-ED6E-4751-B62A-A42EAF256848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88BBA7E5-ED6E-4751-B62A-A42EAF256848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88BBA7E5-ED6E-4751-B62A-A42EAF256848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88BBA7E5-ED6E-4751-B62A-A42EAF256848}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
